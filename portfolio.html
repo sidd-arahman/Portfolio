@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Abdul Rahman</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            border: 1px solid crimson;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: crimson;
+            color: white;
+
+        }
+
+        .heading-1 {
+            padding-left: 10px;
+
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .menu-button a {
+            color: white;
+            text-decoration: none;
+            margin: 20px 20px;
+        }
+
+        /* home page */
+
+        .homepage-container {
+            height: 100vh;
+            background-image: url("1.jpeg");
+            display: flex;
+            color: white;
+            font-size: 50px;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .homepage-container .content {
+            padding-left: 50px;
+        }
+
+        .homepage-container span,
+        .name {
+            font-family: "Share Tech", sans-serif;
+            color: crimson;
+        }
+
+        .homepage-container .hire-btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: crimson;
+            color: wheat;
+            cursor: pointer;
+        }
+
+        .homepage-container .hire-btn:hover {
+            background-color: white;
+            color: crimson;
+        }
+
+        /* ABout -container */
+        .about-heading {
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+        .about-main {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .image-container {
+            width: 100%;
+
+
+        }
+
+        .image-container img {
+            width: 40%;
+
+        }
+
+        .content {
+            width:100%;
+        }
+
+        .content h4 {
+            font-size: 30px;
+        }
+
+        .content h4 span {
+            color: crimson;
+        }
+
+        .content p {
+            word-spacing: 10px;
+            font-size: 20px;
+
+        }
+
+        .content button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: crimson;
+            color: white;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .content button:hover {
+            background-color: aliceblue;
+            color: crimson;
+        }
+
+        /* service-container */
+        .service-page {
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+
+
+        }
+
+        .service-conatiner {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .service-conatiner span {
+            color: crimson;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .service-conatiner h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .service-container h4,h5 {
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            color: crimson;
+        }
+
+
+        .parent-card {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 200px;
+
+        }
+
+        .card-container {
+            border: 1px solid white;
+            border-radius: 15px;
+            background-color: gray;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+            width: 300px;
+            text-align: justify;
+
+        }
+
+        .card-container:hover {
+            background-color: crimson;
+            font-weight: bold;
+            transition: all 0.3s;
+
+        }
+
+        .card-container:hover h5 {
+            color: white;
+        }
+
+        /* My Skill */
+        .skill-container h1 {
+            text-align: center;
+            margin: 20px 0px;
+
+        }
+
+        .skill-parent {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-child1 h6 {
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        
+
+        .sub-one {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-child1,
+        .skill-child2 {
+            width: 50%;
+            padding-inline: 30px;
+        }
+
+        .skill-child1 p {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .skill-child1 button {
+            margin: 10px 20px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* contact-page */
+        .contact-page {
+            height: 100vh
+        }
+
+        .contact-page h1 {
+            text-align: center;
+            margin-top: 200px;
+            margin-bottom: 30px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .contact-head {
+            display: flex;
+        }
+
+        .contact-head h2 {
+            font-size: 30px;
+            padding-bottom: 20px;
+            
+
+        }
+
+        .paragraph {
+            box-sizing: border-box;
+            margin: 10px;
+            font-size: large;
+        }
+
+        .quest {
+            margin-top: 20px;
+        }
+
+        .ans {
+            margin-left: 30px;
+        }
+
+        .detail-container,
+        .form-container {
+            width: 100%;
+        }
+
+        .container-1 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-container input {
+            margin: 10px 0px;
+            height: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-right: 30px;
+            font-size: 20px;
+
+
+        }
+
+        .proj {
+            height: 100px;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .form-container .submit-btn {
+            padding: 10px 40px;
+            background-color: crimson;
+            border-radius: 5px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 10px;
+            width: 100%;
+            background-color: grey;
+            margin-bottom: 20px;
+
+        }
+
+        .one1 {
+            height: 10px;
+            width: 40%;
+            background-color: red;
+        }
+
+        @media screen and (max-width:768px) {
+            .menu-button {
+                display: none;
+            }
+
+            .content p {
+                font-size: 20px;
+            }
+
+            .content .hire-btn {
+                padding: 10px 20px;
+
+                color: #f4f4f4;
+            }
+
+            .about-main {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent-card{
+            display: flex;
+            gap: 40px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: small;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 200px;
+            }
+        }
+        @media screen and (max-width:425px) {
+            .content{
+                font-size: 20px;
+                padding: 0px 20px;
+                text-align: justify;
+                
+            }
+            .about-main .content{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .content h4{
+                font-size: 30px;
+            }
+            .image-container img{
+                width:60%;
+            }
+            .content button{
+                margin-top: 10px;
+                padding: 5px 20px;
+                pa
+                
+            }
+            .skill-child1 ,.skill-child1 h6{
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            .skill-child2{
+                width: 100%;
+                 
+            }
+            .skill-child1 p{
+                font-size: 15px;
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+            .skill-child1 .skill-button{
+                padding: 5px 10px ;
+            }
+            .contact-head{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .contact-head h2{
+                text-align: center;
+                
+                font-size :30px ;
+            }
+            .form-container input {
+                
+                
+            height: 20px;
+            font-size: 15px;
+            border-radius: 5px;
+            }
+            .proj {
+                border: 2px solid;
+                font-size: 15px;
+        }
+        .quest b{
+            margin-left: 5px;
+        }
+        .detail-container{
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="heading-1">
+            <h1>Abdul Rahman.</h1>
+        </div>
+        <div class="menu-button">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Service</a>
+            <a href="">Skills</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <div class="homepage-container">
+        <div class="content">
+
+            <div class="intro">Hello my name is</div>
+            <div class="name">Abdul Rahman</div>
+            <div class="prof"> and I'm a <span>FullStack-Developer</span></div>
+
+            <button class="hire-btn">Hire me</button>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <div class="about-heading">
+            About me
+        </div>
+
+        <div class="about-main">
+            <div class="image-container">
+                <img src="myimg2.png" alt="Abdul Rahman Image">
+            </div>
+
+            <div class="content">
+
+                <h4>I'm Abdul Rahman and I'm a <span>FullStack-Developer</span></h4>
+
+                <p>FullStack Developers design and update websites and online applications using
+                    various programming languages and dgesin tools. A regular example resume for this
+                    job mentions responsibilities such as creating webpage layouts, writing Backend code
+                    as well as Frontend code, editing website content, and making adjustments based
+                    on client feedback . </p>
+
+                <button>Download Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-page">
+        <div class="service-conatiner">
+            <h1>My Services</h1>
+            <span>
+                <h4>__What I Provide__</h4>
+            </span>
+        </div>
+
+        <div class="parent-card">
+            <div class="card-container">
+                <h5>Web Application</h5>
+                FullStack Developers are responsible for designing and building the interface, navigation and aesthetic
+                of websites for businesses and clients As well as Writing Backend Codes , Logics , Providing Security
+                etc. Likely
+                working in the IT team of an organisation or for a digital design agency that services clients,
+                FullStack
+                Developers should possess a range of skills and qualities. !
+            </div>
+            <div class="card-container">
+                <h5>Advertising</h5>
+
+                In a good Advertising resume summary, employers want to see presence of: Your years of experience.
+                Ad revenue driving business growth. Any big career achievements you are proud of. !
+            </div>
+            <div class="card-container">
+                <h5>Apps Design</h5>
+                app designer uses their design and programming language skills to create, manage, and maintain unique
+                mobile applications that give its users a great experience. A great mobile app designer knows how to
+                work
+                with more than one operating system and is proficient in different programming languages. !
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skill-head">
+            <h1>My Skill</h1>
+        </div>
+        <div class="skill-parent">
+            <div class="skill-child1">
+                <h6>My creative skills & exprience.</h6>
+                <p> Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA, PYTHON,C
+                    ,
+                    C++
+                    ,HTML,CSS,JAVASCRIPT, MYSQL , MONGODB. Passionate about implementing and launching new projects.
+                    Ability
+                    to
+                    translate business requirements into technical solutions.</p>
+
+                <button class="skill-button">Read more</button>
+            </div>
+            <div class="skill-child2">
+                <div class="sub-one">
+                    <span>HTML</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>HTML</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>CSS</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>JAVASCRIPT</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>JAVA</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>PYTHON</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+                <div class="sub-one">
+                    <span>MYSQL</span>
+                    <span>50%</span>
+                </div>
+                <div class="one">
+                    <div class="one1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-page">
+            <h1 class="head1">Contact Me</h1>
+            <div class="contact-head">
+                <div class="detail-container">
+                    <h2>Get in touch</h2>
+                    <p class="paragraph">Feel free to get in touch with me.
+                        I am always open to discussing new projects, creative ideas or opportunities to be part of your
+                        visions.
+                    </p>
+                    <p class="quest"> <b>Name:</b></p>
+                    <p class="ans">Abdul Rahman</p>
+                    <p class="quest"><b>Address:</b></p>
+                    <p class="ans">Powai</p>
+                    <p class="quest"><b>Email:</b></p>
+                    <p class="ans">siddiqueabdulr@gmail.com</p>
+                </div>
+
+
+                <div class="form-container">
+                    <h2>Message me</h2>
+
+                    <div class="container-1">
+                        <input type="text" class="name" placeholder="Name">
+                        <input type="text" class="email" placeholder="Email">
+                    </div>
+                    <div><input type="text" class="sub" placeholder="Subject"></div>
+                    <div>
+                        <textarea class="proj" placeholder="Describe the Project"></textarea>
+                    </div>
+
+
+
+                    <button type="submit" class="submit-btn">submit</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+</html>
